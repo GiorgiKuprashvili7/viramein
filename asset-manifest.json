@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/viramein/static/css/main.90512b2c.chunk.css",
+    "main.js": "/viramein/static/js/main.5e30edfb.chunk.js",
+    "main.js.map": "/viramein/static/js/main.5e30edfb.chunk.js.map",
+    "runtime-main.js": "/viramein/static/js/runtime-main.dff682a6.js",
+    "runtime-main.js.map": "/viramein/static/js/runtime-main.dff682a6.js.map",
+    "static/js/2.72be7711.chunk.js": "/viramein/static/js/2.72be7711.chunk.js",
+    "static/js/2.72be7711.chunk.js.map": "/viramein/static/js/2.72be7711.chunk.js.map",
+    "index.html": "/viramein/index.html",
+    "static/css/main.90512b2c.chunk.css.map": "/viramein/static/css/main.90512b2c.chunk.css.map",
+    "static/js/2.72be7711.chunk.js.LICENSE.txt": "/viramein/static/js/2.72be7711.chunk.js.LICENSE.txt",
+    "static/media/footer.module.scss": "/viramein/static/media/footer-background.72448e0b.jpeg",
+    "static/media/heroSection.module.scss": "/viramein/static/media/hero-backgrond-image.0af406ea.jpg",
+    "static/media/hero.module.scss": "/viramein/static/media/hero-background4.3477449b.jpeg",
+    "static/media/image1.a92e3ba7.jpg": "/viramein/static/media/image1.a92e3ba7.jpg",
+    "static/media/image10.9fec2996.jpg": "/viramein/static/media/image10.9fec2996.jpg",
+    "static/media/image11.42b36bd9.jpg": "/viramein/static/media/image11.42b36bd9.jpg",
+    "static/media/image12.cd024f22.jpg": "/viramein/static/media/image12.cd024f22.jpg",
+    "static/media/image13.2109d3c0.jpg": "/viramein/static/media/image13.2109d3c0.jpg",
+    "static/media/image14.a65456a3.jpg": "/viramein/static/media/image14.a65456a3.jpg",
+    "static/media/image2.88a78985.jpg": "/viramein/static/media/image2.88a78985.jpg",
+    "static/media/image3.7025bf20.jpg": "/viramein/static/media/image3.7025bf20.jpg",
+    "static/media/image4.5ae4786d.jpg": "/viramein/static/media/image4.5ae4786d.jpg",
+    "static/media/image5.60b9024a.png": "/viramein/static/media/image5.60b9024a.png",
+    "static/media/image6.9920aa37.jpg": "/viramein/static/media/image6.9920aa37.jpg",
+    "static/media/image7.4dff02ad.png": "/viramein/static/media/image7.4dff02ad.png",
+    "static/media/image8.9937ed5c.jpg": "/viramein/static/media/image8.9937ed5c.jpg",
+    "static/media/image9.431abcc0.jpg": "/viramein/static/media/image9.431abcc0.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dff682a6.js",
+    "static/js/2.72be7711.chunk.js",
+    "static/css/main.90512b2c.chunk.css",
+    "static/js/main.5e30edfb.chunk.js"
+  ]
+}
