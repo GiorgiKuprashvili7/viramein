@@ -1,0 +1,110 @@
+@use '../styles/variables' as *;
+
+.footer {
+  position: relative;
+  background-color: $black;
+  color: $gray;
+  height: auto;
+  .content {
+    @include content-max-width;
+    cursor: default;
+    height: 80px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: $prymaryFont;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .goTop {
+      cursor: pointer;
+      text-transform: uppercase;
+      transition-duration: 100ms;
+      &:hover {
+        color: $accentColor;
+      }
+    }
+    .social_icons_box {
+      width: 188px;
+      display: flex;
+      justify-content: flex-end;
+      a {
+        margin-left: 30px;
+        transition-duration: 100ms;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        color: $gray;
+        text-decoration: none;
+        font-size: 22px;
+        &:hover {
+          color: $accentColor;
+        }
+      }
+    }
+  }
+}
+
+.contact_us {
+  cursor: default;
+  height: 400px;
+  background-blend-mode: overlay;
+  background-color: rgba(46, 45, 45, 0.986);
+  background-image: url('../assets/images/footer-background.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: $prymaryFont;
+  color: $white;
+  text-align: center;
+  h1 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 30px;
+  }
+  p {
+    line-height: 160%;
+    max-width: 50ch;
+    padding-bottom: 30px;
+    padding: 0 20px 30px 20px;
+  }
+  .contact_btn {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-family: $prymaryFont;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 12px 25px;
+    border: 1px dashed lighten($black, 80%);
+    background-color: transparent;
+    &:hover {
+      border-color: lighten($black, 60%);
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-landscape-breakpoint) {
+  .footer {
+    padding: 20px 0;
+    .content {
+      flex-direction: column-reverse;
+      .social_icons_box {
+        width: 120px;
+        display: flex;
+        justify-content: space-between;
+        a {
+          margin-left: 0;
+        }
+      }
+    }
+
+    .goTop {
+      display: none;
+    }
+  }
+}

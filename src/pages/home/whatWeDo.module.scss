@@ -1,0 +1,100 @@
+@use '../../styles/variables' as *;
+
+.section {
+  background-color: $black;
+  padding: $paddingTopAndBoottom;
+}
+.content {
+  @include content-max-width;
+}
+.content {
+  cursor: default;
+  font-family: $prymaryFont;
+  h3 {
+    margin-left: 50px;
+    text-transform: uppercase;
+    color: $white;
+    position: relative;
+    font-size: 16px;
+    line-height: 100%;
+    padding-bottom: 15px;
+    &::before {
+      position: absolute;
+      content: '';
+      height: 2px;
+      width: 35px;
+      background-color: $white;
+      left: -50px;
+      top: 7px;
+    }
+  }
+  h1 {
+    margin-left: 50px;
+    text-transform: uppercase;
+    color: $white;
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+}
+
+.box_container {
+  padding-top: 80px;
+  cursor: default;
+  font-family: $prymaryFont;
+  display: flex;
+  justify-content: space-between;
+
+  .box {
+    padding: 0 15px;
+    max-width: 25ch;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    i {
+      transition-duration: 100ms;
+      color: $white;
+      font-size: 50px;
+    }
+
+    h4 {
+      text-transform: uppercase;
+      font-weight: 500;
+      color: $white;
+      padding: 15px 0;
+    }
+    p {
+      color: $gray;
+      line-height: 150%;
+    }
+    &:hover {
+      i,
+      h4 {
+        color: $accentColor;
+      }
+    }
+  }
+}
+@media screen and (max-width: $mobile-landscape-breakpoint) {
+  .content {
+    h3 {
+      margin-left: 0px;
+      padding-bottom: 10px;
+      &::before {
+        display: none;
+      }
+    }
+    h1 {
+      margin-left: 0px;
+      font-size: 30px;
+      padding-bottom: 10px;
+    }
+  }
+  .box_container {
+    padding-top: 30px;
+    flex-direction: column;
+    .box {
+      padding: 20px 0;
+      max-width: 45ch;
+    }
+  }
+}

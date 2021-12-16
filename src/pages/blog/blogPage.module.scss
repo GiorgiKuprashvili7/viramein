@@ -1,0 +1,141 @@
+@use '../../styles/variables' as *;
+
+.section {
+  padding: $paddingTopAndBoottom;
+}
+.content {
+  @include content-max-width;
+  display: grid;
+  grid-row-gap: 60px;
+}
+.postBox {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  background-color: #2a2a2a;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+.imageContainer {
+  height: 100%;
+  position: relative;
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.textContainer {
+  cursor: default;
+  padding: 40px;
+  font-family: $prymaryFont;
+  color: $white;
+  .tagsContainer {
+    max-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 35px;
+    a {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 12px;
+      padding: 5px 10px;
+      border-radius: 15px;
+      text-decoration: none;
+      background-color: lighten(#2a2a2a, 7%);
+      color: lighten(#2a2a2a, 25%);
+      &:hover {
+        background-color: lighten(#2a2a2a, 13%);
+        color: lighten(#2a2a2a, 33%);
+      }
+    }
+  }
+  h1 {
+    max-width: 30ch;
+    line-height: 150%;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  p {
+    max-width: 50ch;
+    line-height: 160%;
+    margin-bottom: 30px;
+  }
+  .line {
+    height: 1px;
+    width: 100%;
+    background-color: lighten(#2a2a2a, 7%);
+    margin-bottom: 30px;
+  }
+  .authorContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    p {
+      font-size: 14px;
+      color: lighten(#2a2a2a, 25%);
+    }
+  }
+  .buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    button {
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border: none;
+      background-color: transparent;
+      color: $accentColor;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .icon {
+        margin-left: 15px;
+        margin-bottom: 1px;
+      }
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet-breakpoint) {
+  .content {
+    padding: 0 10px;
+  }
+  .postBox {
+    display: flex;
+    flex-direction: column-reverse;
+    .imageContainer {
+      height: 450px;
+    }
+    .textContainer {
+      padding: 15px;
+      .tagsContainer {
+        margin-bottom: 20px;
+      }
+      h1 {
+        margin-bottom: 20px;
+      }
+      p {
+        margin-bottom: 25px;
+      }
+      .line {
+        margin-bottom: 20px;
+      }
+      .authorContainer {
+        margin-bottom: 20px;
+      }
+      .buttonContainer {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

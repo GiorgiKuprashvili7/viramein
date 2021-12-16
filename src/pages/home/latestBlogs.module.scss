@@ -1,0 +1,142 @@
+@use '../../styles/variables' as *;
+
+.section {
+  padding: $paddingTopAndBoottom;
+  background-color: $white;
+}
+.content {
+  @include content-max-width;
+  font-family: $prymaryFont;
+  cursor: default;
+  .subtitle {
+    margin-left: 50px;
+    text-transform: uppercase;
+    color: $black;
+    position: relative;
+    font-size: 16px;
+    line-height: 100%;
+    padding-bottom: 15px;
+    &::before {
+      position: absolute;
+      content: '';
+      height: 2px;
+      width: 35px;
+      background-color: $black;
+      left: -50px;
+      top: 7px;
+    }
+  }
+  .title {
+    margin-left: 50px;
+    text-transform: uppercase;
+    color: $black;
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+  .linkContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    .blogLinkBtn {
+      top: 80px;
+      text-decoration: none;
+      color: $black;
+      cursor: pointer;
+      font-family: $prymaryFont;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: 12px 25px;
+      border: 1px solid lighten($black, 80%);
+      background-color: transparent;
+      &:hover {
+        border: 1px solid lighten($black, 60%);
+      }
+    }
+  }
+}
+
+.content .blogsContainer {
+  padding-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  width: 100%;
+  grid-column-gap: 30px;
+  .box {
+    .img_container {
+      width: 100%;
+      position: relative;
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        filter: grayscale(60%);
+      }
+      p {
+        color: $white;
+        background-color: $black;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 12px;
+        text-align: center;
+        width: 100px;
+        line-height: 30px;
+        position: absolute;
+        cursor: default;
+        bottom: 10px;
+        left: 10px;
+      }
+    }
+
+    .text_container {
+      cursor: default;
+      padding: 0 25px;
+      h3 {
+        padding-top: 20px;
+        font-size: 17px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      h4 {
+        padding-top: 10px;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+      p {
+        color: $gray;
+        padding-top: 10px;
+        line-height: 150%;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-landscape-breakpoint) {
+  .content {
+    .subtitle {
+      margin-left: 0px;
+      padding-bottom: 10px;
+      &::before {
+        display: none;
+      }
+    }
+    .title {
+      margin-left: 0px;
+      font-size: 30px;
+      padding-bottom: 10px;
+    }
+  }
+
+  .content .blogsContainer {
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    .box {
+      padding-top: 35px;
+      .text_container {
+        padding: 0;
+      }
+    }
+  }
+}

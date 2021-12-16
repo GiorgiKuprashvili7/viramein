@@ -1,0 +1,14 @@
+@mixin content-max-width {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+$paddingTopAndBoottom: 100px 0px;
+
+$headerHight: 120px;
+
+$tablet-breakpoint: 1024px;
+$mobile-landscape-breakpoint: 768px;
+$mobile-portrate-breakpoint: 500px;

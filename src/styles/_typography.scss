@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap');
+
+$prymaryFont: 'Montserrat', sans-serif;
+
+@mixin hero-subtitle {
+  font-family: $prymaryFont;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 100%;
+}
+@mixin hero-title {
+  font-family: $prymaryFont;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
